@@ -11,6 +11,7 @@ import { BadgeSystem } from "@/components/gamification/badge-system"
 import { ProgressCircle } from "@/components/gamification/progress-circle"
 import { StatsDashboard } from "@/components/stats-dashboard"
 import { HeroSection } from "@/components/hero-section"
+import { FooterSection } from "@/components/footer-section"
 import { BADGES, type GameStats, calculateLevel, getXPProgress, type Badge as BadgeType } from "@/lib/gamification"
 import { LocalStorageManager } from "@/lib/local-storage"
 import { getGameModeConfig, type GameMode, type Player, type MultiplayerState, GAME_MODES } from "@/lib/game-modes"
@@ -923,6 +924,9 @@ export default function GreenGPTBattle() {
               ))}
             </div>
           </div>
+
+          {/* NOUVEAU FOOTER */}
+          <FooterSection />
         </div>
 
         {/* Modals */}
